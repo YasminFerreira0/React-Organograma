@@ -1,14 +1,14 @@
 import './Colaborador.css'
 
-const Colaborador = () => {
+const Colaborador = (props) => {
     return(
         <div className='colaborador'>
-            <div className='cabecalho'>
+            <div className='cabecalho' style={{backgroundColor: props.corDeFundo}}>
                 <img src='https://github.com/yasminferreira0.png' alt=''/>
             </div>
             <div className='rodape'>
-                <h4>Yasmin</h4>
-                <h5>Dev</h5>
+                <h4>{props.nome}</h4>
+                <h5>{props.cargo}</h5>
             </div>
         </div>
 
